@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package lab2;
+
+// TODO: Create service named 'Store'. Service consists of:
+// - SetRPC rpc with SetReq as input and returns SetReply
+// - GetRPC rpc with GetReq as input and returns GetReply
+
+// TODO: Create enum named 'Group' with values ADMIN and USER. ADMIN should come
+// before USER.
+
+// TODO: Create message named 'Item' with Group field and bytes field
+
+// TODO: Create message named 'SetReq' with string field and Item field
+
+// TODO: Create message named 'SetReply' with no fields
+
+// TODO: Create message named 'GetReq' with Group field and string field
+
+// TODO: Create message named 'GetReply' with Item field and string field

@@ -1,0 +1,17 @@
+// Specifies the version of proto to use. 'proto2' is also available
+syntax = "proto3";
+
+// The package should match the go package you are in
+package example;
+
+// Greeter service contains SetRPC and GetRPC
+service Greeter { rpc GreetRPC(GreetRequest) returns (GreetReply); }
+
+// GreetRequest requires a string
+message GreetRequest { string msg = 1; }
+
+// GreetReply requires a string
+message GreetReply { string reply = 1; }
+
+// For everything you need to know about writing proto files:
+// https://developers.google.com/protocol-buffers/docs/proto3
